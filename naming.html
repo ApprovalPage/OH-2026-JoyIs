@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Approval page</title>
+	<style>
+div { 
+	display: block; 
+}
+</style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body>
+	
+<div w3-include-html="menu-pband.html"></div>
+
+<script>
+includeHTML();
+</script>
+
+
+<hr />
+
+<div>	
+	
+
+	<table width="auto">
+		<tr>
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif"><strong>Naming Competition</strong></font></p>
+			</td>
+		</tr>
+		
+
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Naming 01</font></td>
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Naming 02</font></td>
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Naming 03</font></td>
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Naming 04</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="naming/OH-NamingContest-01.jpg" style="vertical-align:top" width="270" alt=""/></td>
+		<td align="left"><img src="naming/OH-NamingContest-02.jpg" style="vertical-align:top" width="270" alt=""/></td>
+        <td align="left"><img src="naming/OH-NamingContest-03.jpg" style="vertical-align:top" width="270" alt=""/></td>
+		<td align="left"><img src="naming/OH-NamingContest-04.jpg" style="vertical-align:top" width="270" alt=""/></td>
+    </tr> 
+    
+    <tr height="20px"></tr>
+		
+		
+    
+    
+    
+    <tr height="60px"></tr> 
+		
+		
+		
+		
+
+    <tr>
+        <td><hr /></td>
+    </tr>
+
+		
+		
+		
+	</table>
+
+<p></p>
+<hr />
+</div>
+	
+</body>
+</html>
