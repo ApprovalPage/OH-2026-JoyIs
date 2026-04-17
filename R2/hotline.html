@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Approval page</title>
+	<style>
+div { 
+	display: block; 
+}
+</style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body>
+	
+<div w3-include-html="menu-pband.html"></div>
+
+<script>
+includeHTML();
+</script>
+
+
+<hr />
+
+<div>	
+	
+
+	<table width="100%">
+		<tr>
+			<td>
+			<p><font face="Arial, Helvetica, sans-serif"><strong>Joy Hotline - Social</strong></font></p>
+			</td>
+		</tr>
+		
+
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 01</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-01.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-01.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+    <tr height="20px"></tr> 
+    
+		
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 02</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-02.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-02.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+		
+    
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 03</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-03.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-03.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+		
+    
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 04</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-04.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-04.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 05</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-05.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-05.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 06</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-06.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-06.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 07</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-07.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-07.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 08</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-08.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-08.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 09</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-09.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-09.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    <tr height="20px"></tr> 
+    
+    <tr align="left" valign="top"> 
+        <td align="left"><font face="Arial, Helvetica, sans-serif" color="#000000">Hotline 10</font></td>
+    </tr>	
+    		
+    <tr align="center"> 
+        <td align="left"><img src="hotline/OH-Joy-Hotline-9x16-10.jpg" style="vertical-align:top" width="270" alt=""/> &nbsp; &nbsp; <img src="hotline/OH-Joy-Hotline-1x1-10.jpg" style="vertical-align:top" width="270" alt=""/></td>		
+    </tr> 
+    
+		
+    
+		
+		
+    
+    
+    
+    <tr height="60px"></tr> 
+		
+		
+		
+		
+
+    <tr>
+        <td><hr /></td>
+    </tr>
+
+		
+		
+		
+	</table>
+
+<p></p>
+<hr />
+</div>
+	
+</body>
+</html>
